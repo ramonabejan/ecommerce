@@ -1,2 +1,3 @@
 # ecommerce
-A simple e-commerce application in Angular
+
+e-commerce application in Angular
