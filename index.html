@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Shopping Cart Challenge</title>
+        <meta name="description" content="Shopping Cart Javascript Developer Challenge">
+
+        <!-- Schema.org for Google -->
+        <meta itemprop="name" content="Shopping Cart Challenge">
+        <meta itemprop="description" content="Shopping Cart Javascript Developer Challenge">
+
+        <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+        <meta name="og:title" content="Shopping Cart Challenge">
+        <meta name="og:description" content="Shopping Cart Javascript Developer Challenge">
+        <meta name="og:site_name" content="Shopping Cart Challenge">
+        <meta name="og:locale" content="en_Us">
+        <meta name="og:type" content="website">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="styles/main.css">
+    </head>
+    <body ng-app = "ecommerceApp">
+        <header-page>
+        </header-page>
+        <main  class="product-page">
+            <div class="container">
+                <products-list>
+                </products-list>
+
+                <nav class="pagination">
+                    <ul class="pagination__list">
+                        <li class="pagination__item">
+                            <a href="#" class="pagination__link">
+                                <svg class="icon" width="8px" height="10px" viewBox="18 18 8 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <title>Arrow Left</title>
+                                    <polygon id="Left-Icon" stroke="none" fill-rule="evenodd" transform="translate(22.027061, 23.000000) scale(-1, 1) translate(-22.027061, -23.000000) " points="22.9427745 22.9999999 19 26.9458774 20.0541226 28 25.0541226 23 20.0541226 18 19 19.0541226"></polygon>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="#" class="pagination__link">
+                                1
+                            </a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="#" class="pagination__link">
+                                2
+                            </a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="#" class="pagination__link">
+                                3
+                            </a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="#" class="pagination__link">
+                                ...
+                            </a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="#" class="pagination__link">
+                                10
+                            </a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="#" class="pagination__link">
+                                <svg class="icon" width="8px" height="10px" viewBox="18 18 8 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <title>Arrow Right</title>
+                                    <polygon id="Left-Iocn" stroke="none" fill-rule="evenodd" points="22.9427745 22.9999999 19 26.9458774 20.0541226 28 25.0541226 23 20.0541226 18 19 19.0541226"></polygon>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </main>
+        <footer class="container">
+            <p class="footer__sidenote">Footer</p>
+        </footer>
+
+         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+        <script src="scripts/app.js" type="text/javascript"></script>
+        <script src="scripts/controllers/main.js" type="text/javascript"></script>
+        <script src="scripts/services/data.js" type="text/javascript"></script>
+        <script src="scripts/directives/products.js" type="text/javascript"></script>
+        <script src="scripts/directives/headerPage.js" type="text/javascript"></script>
+    </body>
+</html>
