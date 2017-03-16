@@ -1,0 +1,34 @@
+{
+  "name": "js_challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev":  "node node_modules/.bin/webpack && cp dist/scripts/vendor.bundle.js scripts/vendor.bundle.js && cp dist/scripts/challenge.bundle.js scripts/challenge.bundle.js", 
+    "prod": "NODE_ENV=production node node_modules/.bin/webpack --optimize-minimize && cp index.html dist/index.html && cp -R templates dist && cp -R mock dist"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/rbejan/js_challenge_ramona_bejan.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/rbejan/js_challenge_ramona_bejan/issues"
+  },
+  "homepage": "https://gitlab.com/rbejan/js_challenge_ramona_bejan#README",
+  "dependencies": {
+    "angular": "^1.6.3",
+    "exact": "^0.7.0",
+    "style-loader": "^0.13.2"
+  },
+  "devDependencies": {
+    "css-loader": "^0.26.4",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "file-loader": "^0.10.1",
+    "raw-loader": "^0.5.1",
+    "style-loader": "^0.13.2",
+    "webpack": "^2.2.1"
+  }
+}

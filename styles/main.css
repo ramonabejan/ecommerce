@@ -67,7 +67,9 @@ a:visited{
 ul, li {
     margin: 0;
     padding: 0;
-    list-style-type: none; 
+    list-style-type: none;
+    /* float: right; */
+    /* display: block; */
 }
 
 button {
@@ -78,11 +80,9 @@ button {
 header,
 footer {
     height: 60px;
-    
     display: flex;
     flex-direction: row;
     align-items: center;
-    
     text-transform: uppercase;
     background-color: #ffffff;
 }
@@ -116,7 +116,6 @@ main {
     border: 1px solid #d9d9d9;
     border-radius: 100px;
     background-color: #ffffff;
-    
     cursor: pointer;
     transition: .3s border, .3s color, .3s background-color;
 }
@@ -136,7 +135,6 @@ main {
 }
 
 .button--primary:hover {
-    border: 1px solid #444A59;
     color: #ffffff;
     background-color: #444A59;
 }
@@ -147,6 +145,16 @@ main {
 
 .button--wishlist:hover > .icon {
     fill: #444A59;
+}
+
+.button--wishlist:disabled > .icon {
+   fill: #444A59;
+
+
+}
+.button--wishlist:disabled {
+   cursor:default;
+    border: 1px solid #444A59;
 }
 
 .button--in-cart {
@@ -394,6 +402,13 @@ main {
     fill: #444A59;
 }
 
+.pagination__item .current {
+    color: #3a9def;
+    font-weight: bold;
+    cursor: default;
+}
+
+
 /* ==========================================================================
    Footer
    ========================================================================== */
@@ -401,4 +416,50 @@ main {
 .footer__sidenote {
     font-family: 'Lato-Bold', sans-serif;
     letter-spacing: 1.37px;
+}
+
+.header-bag_details{
+    border: 1px solid;
+    width: 500px;
+    max-width: 1240px;
+    padding: 12px;
+    margin-right: 15px;
+    position: absolute;
+    z-index: 1;
+    background-color: #f8f8f8;
+    margin-left: 60%;
+}
+
+.header-bag_details a{
+      /* font-size: 15px; */
+      font-weight: bold;
+      margin-right: 20px;
+}
+
+.minibag_title{
+      font-size: 17px;
+      font-weight: bold;
+      padding-bottom:10px;
+}
+
+
+.minibag_total{
+      font-size: 17px;
+      font-weight: bold;
+      clear: left;
+      padding-bottom:10px;
+      margin-top: 50px;
+}
+
+
+.product__image_minibag {
+    clear: left;
+    max-width: 20%;
+    height: auto;
+    float: left;
+    display: block;
+    margin-right: 10px;
+}
+.product_minibag_details{
+    margin-top: 40px;
 }

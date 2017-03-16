@@ -1,5 +1,9 @@
 # ecommerce
 
-todo assets..
 
-e-commerce application in Angular
+e-commerce application 
+
+Angular, webpack
+
+prod: npm run prod
+dev: npm run dev
